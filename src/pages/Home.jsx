@@ -36,7 +36,7 @@ function Home() {
                   <span className="px-3 py-1 text-xs font-bold rounded-full bg-blue-50 text-blue-700">
                     {project.sector}
                   </span>
-                  <span className="text-sm font-semibold text-green-600">Verified ✅</span>
+                  <span className="text-sm font-semibold text-green-600">Verified </span>
                 </div>
                 <h3 className="text-xl font-bold mb-2" style={{ color: '#1D3050' }}>
                   {project.title}
