@@ -5,7 +5,7 @@ function VerificationQueue() {
 
   // جلب المشاريع المعلقة عند تحميل الصفحة
   useEffect(() => {
-    fetch('https://investmentcompassapi-production.up.railway.app/api/Projects/pending')
+    fetch('https://investmentcompassapi-production-8571.up.railway.app/')
       .then(response => response.json())
       .then(data => setPendingProjects(data))
       .catch(error => console.error('Error fetching projects:', error));
