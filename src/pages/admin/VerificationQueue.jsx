@@ -14,7 +14,7 @@ function VerificationQueue() {
   // دالة تغيير حالة المشروع بالرابط الجديد المتوافق مع الـ Backend
   const updateProjectStatus = async (id, newStatus) => {
     try {
-      const response = await fetch(`https://investmentcompassapi-production.up.railway.app/api/Projects/${id}/status/${newStatus}`, {
+      const response = await fetch(`investmentcompassapi-production-8571.up.railway.app`, {
         method: 'PUT' // حذفنا الـ body لأنه لم يعد مطلوباً
       });
 
