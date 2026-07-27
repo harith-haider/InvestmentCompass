@@ -19,7 +19,7 @@ function Login() {
     
     try {
       // إرسال طلب تسجيل الدخول للـ Backend المرفوع
-      const response = await fetch('', {
+      const response = await fetch('investmentcompassapi-production-8571.up.railway.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
