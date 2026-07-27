@@ -36,7 +36,7 @@ function SubmitProject() {
 
     try {
       // إرسال البيانات إلى السيرفر المرفوع على Railway
-      const response = await fetch('investmentcompassapi-production-8571.up.railway.app', {
+      const response = await fetch('https://investmentcompassapi-production-8571.up.railway.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

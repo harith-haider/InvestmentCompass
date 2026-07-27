@@ -19,7 +19,7 @@ function Register() {
     
     try {
       // إرسال البيانات فعلياً إلى الـ Backend API المرفوع
-      const response = await fetch('investmentcompassapi-production-8571.up.railway.app', {
+      const response = await fetch('https://investmentcompassapi-production-8571.up.railway.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

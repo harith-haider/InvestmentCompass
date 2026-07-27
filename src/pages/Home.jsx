@@ -6,7 +6,7 @@ function Home() {
 
   // جلب المشاريع المقبولة من قاعدة البيانات
   useEffect(() => {
-    fetch('investmentcompassapi-production-8571.up.railway.app')
+    fetch('https://investmentcompassapi-production-8571.up.railway.app/api/Projects/approved')
       .then(response => response.json())
       .then(data => setApprovedProjects(data))
       .catch(error => console.error('Error fetching approved projects:', error));
