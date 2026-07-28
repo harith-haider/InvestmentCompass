@@ -5,7 +5,8 @@ function VerificationQueue() {
 
   // جلب المشاريع المعلقة عند تحميل الصفحة
   useEffect(() => {
-    fetch('https://investmentcompassapi-production-8571.up.railway.app/')
+    fetch('https://investmentcompassapi-production-8571.up.railway.app/api/Projects') 
+// تأكد من كلمة Projects أو المسار الصحيح اللي بالباك اند مالتك
       .then(response => response.json())
       .then(data => setPendingProjects(data))
       .catch(error => console.error('Error fetching projects:', error));
@@ -14,9 +15,10 @@ function VerificationQueue() {
   // دالة تغيير حالة المشروع بالرابط الجديد المتوافق مع الـ Backend
   const updateProjectStatus = async (id, newStatus) => {
     try {
-      const response = await fetch('https://investmentcompassapi-production-8571.up.railway.app', {
-        method: 'PUT' // حذفنا الـ body لأنه لم يعد مطلوباً
-      });
+      const response = await fetch(`https://investmentcompassapi-production-8571.up.railway.app/api/Projects/${id}`, {
+    method: 'PUT'
+    // تكملة الكود مالتك
+});
 
       if (response.ok) {
         // إزالة المشروع من الجدول فوراً بعد نجاح العملية
